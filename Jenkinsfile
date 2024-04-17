@@ -12,7 +12,7 @@ pipeline {
         stage('Dependency Installation') {
             steps {
                 // Install dependencies for frontend
-                bat 'npm install' // Assuming npm is used for dependency management
+           //     bat 'npm install' // Assuming npm is used for dependency management
             }
         }
         
