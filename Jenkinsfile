@@ -33,7 +33,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 // Push Docker image to Docker Hub
-                bat 'docker push yourusername/myapp:latest'
+                bat 'docker push rubabzahra/myapp:latest'
             }
         }
     }
