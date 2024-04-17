@@ -28,14 +28,14 @@ pipeline {
         stage('Run Docker Image') {
             steps {
                 // Run Docker image
-                bat 'docker run -d -p 8080:80 myapp'
+                sh 'docker run -d -p 3000:3000 myapp'
             }
         }
         
         stage('Push Docker Image') {
             steps {
                 // Push Docker image to Docker Hub
-                bat 'docker push rubabzahra/myapp:latest'
+                sh 'docker push rubabzahra/myapp:latest'
             }
         }
     }
