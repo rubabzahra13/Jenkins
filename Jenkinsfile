@@ -5,14 +5,16 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub repository
-                git 'https://github.com/aditya-sridhar/simple-reactjs-app.git'
+                git 'https://github.com/aditya-sridhar/simple-reactjs-app'
             }
         }
         
         stage('Dependency Installation') {
             steps {
                 // Install dependencies for frontend
+
              //   bat 'npm install' // Assuming npm is used for dependency management
+
             }
         }
         
