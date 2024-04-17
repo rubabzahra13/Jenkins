@@ -1,13 +1,13 @@
 pipeline {
     agent any
 
-    stages {
         tools
         {
             nodejs 'node'
             dockertool 'Docker'
 
         }
+    stages {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub repository
